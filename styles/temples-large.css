@@ -6,7 +6,7 @@ display:none;
 
 }
 
-.navigation{
+nav{
 
 display:flex;
 flex-direction:row;
@@ -14,7 +14,7 @@ justify-content:flex-end;
 
 }
 
-.navigation li{
+nav a{
 
 margin-left:1rem;
 

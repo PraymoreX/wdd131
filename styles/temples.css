@@ -46,7 +46,7 @@ cursor:pointer;
 
 }
 
-.navigation{
+nav{
 
 display:none;
 flex-direction:column;
@@ -55,13 +55,13 @@ background:#1f2937;
 
 }
 
-.navigation.open{
+nav.open{
 
 display:flex;
 
 }
 
-.navigation a{
+nav a{
 
 color:white;
 text-decoration:none;
@@ -71,7 +71,7 @@ transition:background 0.3s;
 
 }
 
-.navigation a:hover{
+nav a:hover{
 
 background:#374151;
 
