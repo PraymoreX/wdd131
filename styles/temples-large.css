@@ -1,0 +1,29 @@
+@media screen and (min-width: 768px){
+
+#menu{
+
+display:none;
+
+}
+
+.navigation{
+
+display:flex;
+flex-direction:row;
+justify-content:flex-end;
+
+}
+
+.navigation li{
+
+margin-left:1rem;
+
+}
+
+.gallery{
+
+grid-template-columns:repeat(3,1fr);
+
+}
+
+}
