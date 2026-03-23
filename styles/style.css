@@ -1,0 +1,125 @@
+
+:root {
+  --primary-color: #006400; /* Ghana green */
+  --secondary-color: #ecd22c; /* Ghana yellow */
+  --accent-color: #d90404; /* Ghana red */
+  --text-color: #222;
+  --heading-color: #004d00;
+  --font-family: 'Arial', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.6rem;
+
+}
+
+.menu:hover{
+  background-color: red;
+}
+
+section {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  background-color: white;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+#hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.gallery-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.gallery-container img {
+  flex: 1 1 30%;
+  width: 32%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.weather-icon::after {
+  content: "⛅";
+  margin-left: 5px;
+}
+
+.weather-svg img {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  background-color: #006400;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 500px) {
+  header nav ul {
+    flex-direction: column;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .gallery-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+  .weather-icon::after {
+    content: "";
+  }
+
+  .weather-svg {
+    display: block;
+  }
+}
+
+@media (min-width: 501px) {
+  .weather-svg {
+    display: none;
+  }
+}

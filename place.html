@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Ghana: history, culture, attractions, weather, and travel tips.">
+  <meta name="author" content="Praymore Omeni">
+  <title>Discover Ghana</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  
+  <header>
+    <h1>Discover Ghana</h1>
+    <nav>
+      <ul>
+        <li><a href="#overview" class="menu">Overview</a></li>
+        <li><a href="#attractions" class="menu">Attractions</a></li>
+        <li><a href="#weather" class="menu">Weather</a></li>
+        <li><a href="#gallery" class="menu">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  
+  <section id="hero">
+    <picture>
+      <source srcset="images/hero-small.webp" media="(max-width: 500px)">
+      <source srcset="images/hero-medium.webp" media="(max-width: 1000px)">
+      <img src="images/hero-large.avif" alt="Beautiful landscape of Ghana" width="960" height="250">
+    </picture>
+  </section>
+
+  
+  <section id="overview">
+    <h2>About Ghana</h2>
+    <p>Ghana, located along the Gulf of Guinea in West Africa, is known as the "Gateway to Africa" for its rich history and vibrant culture. The country is celebrated for its diverse ethnic traditions, colorful festivals, and warm hospitality.</p>
+    <p>Visitors can explore stunning natural landscapes, from the lush Kakum National Park with its famous canopy walkway to the serene beaches of the Volta Region. Accra, the capital, is a lively hub of arts, music, and cuisine, blending modern development with traditional heritage. Ghana’s vibrant markets, local crafts, and flavorful dishes like jollof rice and waakye offer travelers a true taste of its culture.</p>
+  </section>
+
+  
+  <section id="attractions">
+    <h2>Top Attractions in Ghana</h2>
+    <ul>
+      <li>Elmina & Cape Coast Castles</li>
+      <li>Kakum National Park – Canopy Walkway</li>
+      <li>Lake Volta – One of the largest man-made lakes in the world</li>
+      <li>Labadi Beach – Accra’s popular seaside escape</li>
+      <li>Kwame Nkrumah Mausoleum – History & culture in Accra</li>
+    </ul>
+  </section>
+
+
+  <section id="weather">
+    <h2>Weather <span class="weather-icon"></span></h2>
+    <div class="weather-svg">
+      <img src="images/weather-icons-17-svgrepo-com.svg" alt="Weather Icon">
+    </div>
+    <div class="weather-details">
+      <p>Temperature: <span id="temperature">5°C</span></p>
+      <p>Wind Speed: <span id="windSpeed">10 km/h</span></p>
+      <p>Wind Chill: <span id="windChill"></span></p>
+    </div>
+ 
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery-container">
+      <img src="images/scenic.avif" alt="Scenic view 1 of Ghana">
+      <img src="images/scenic2.avif" alt="Scenic view 2 of Ghana">
+      <img src="images/scenic3.avif" alt="Scenic view 3 of Ghana">
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="currentYear"></span> | Last Modified: <span id="lastModified"></span></p>
+  </footer>
+  <script src="scripts/script.js" defer></script>
+</body>
+</html>
