@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Praymore Omeni">
+        <meta name="description" content="A responsive temple picture album showcasing beautiful temples from around the world.">
+
+        <title>Temple Album</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/temples-large.css">
+
+        <script src="scripts/filtered-temples.js" defer></script>
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="header-container">
+            <h2 class="logo">Temple Album</h2>
+            <button id="menu" aria-label="Menu">
+            ☰
+            </button>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Old</a>
+                <a href="#">New</a>
+                <a href="#">Large</a>
+                <a href="#">Small</a>
+            </nav>
+
+            </div>
+        </header>
+
+        <main>
+            <h1>Temple Gallery</h1>
+
+            <div class="gallery"></div>
+        </main>
+
+        <footer>
+            <p>© <span id="year"></span> Praymore Omeni</p>
+
+            <p id="lastModified"></p>
+
+        </footer>
+
+    </body>
+</html>
