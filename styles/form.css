@@ -73,7 +73,8 @@ textarea:focus {
 fieldset {
   border: 1px solid var(--border);
   border-radius: 8px;
-  padding: 12px;
+  padding: 15px;
+  margin-bottom: 18px;
 }
 
 legend {
@@ -81,15 +82,25 @@ legend {
   padding: 0 6px;
 }
 
+fieldset input[type="radio"],
+fieldset input[type="checkbox"] {
+  width: auto;
+  margin-right: 6px;
+}
+
 fieldset label {
-  display: inline-block;
-  margin-right: 12px;
-  margin-top: 6px;
+  display: inline-flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-top: 8px;
+  font-weight: 400;
+  cursor: pointer;
 }
 
 .required {
   color: var(--accent);
 }
+
 
 input[type="submit"] {
   background: var(--primary);
@@ -106,6 +117,7 @@ input[type="submit"]:hover {
   background: var(--secondary);
   transform: translateY(-1px);
 }
+
 
 footer {
   text-align: center;
