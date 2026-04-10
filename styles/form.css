@@ -1,0 +1,132 @@
+:root {
+  --primary: #1f3c88;
+  --secondary: #4a90e2;
+  --background: #f7f9fc;
+  --text: #1a1a1a;
+  --border: #e0e6ed;
+  --accent: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", Roboto, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+header h1 {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* MAIN CARD */
+main {
+  max-width: 650px;
+  margin: -40px auto 40px;
+  padding: 25px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* FORM GROUP */
+.form-group {
+  margin-bottom: 18px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+/* INPUTS */
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 0.95rem;
+  transition: all 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--secondary);
+  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.15);
+}
+
+/* FIELDSET */
+fieldset {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+legend {
+  font-weight: 600;
+  padding: 0 6px;
+}
+
+/* INLINE OPTIONS */
+fieldset label {
+  display: inline-block;
+  margin-right: 12px;
+  margin-top: 6px;
+}
+
+/* REQUIRED STAR */
+.required {
+  color: var(--accent);
+}
+
+/* BUTTON */
+input[type="submit"] {
+  background: var(--primary);
+  color: white;
+  font-weight: 500;
+  border: none;
+  padding: 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+input[type="submit"]:hover {
+  background: var(--secondary);
+  transform: translateY(-1px);
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  font-size: 0.85rem;
+  padding: 15px;
+  color: #555;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 600px) {
+  main {
+    margin: -30px 10px 20px;
+    padding: 20px;
+  }
+}

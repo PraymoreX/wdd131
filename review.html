@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Review Submitted</title>
+<meta name="description" content="Review submission confirmation">
+<link rel="stylesheet" href="./styles/form.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Thank You!</h1>
+</header>
+
+<main>
+  <p>Your review has been successfully submitted.</p>
+  <p id="counter"></p>
+</main>
+
+<footer>
+  <p>&copy; 2026 | Praymore | WDD 131</p>
+</footer>
+
+<script>
+let count = localStorage.getItem("reviewCount");
+
+if (!count) {
+  count = 0;
+}
+
+count++;
+
+localStorage.setItem("reviewCount", count);
+
+document.getElementById("counter").textContent =
+  "Total Reviews Submitted: " + count;
+</script>
+
+</body>
+</html>
