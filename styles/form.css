@@ -20,7 +20,6 @@ body {
   line-height: 1.6;
 }
 
-/* HEADER */
 header {
   background: linear-gradient(135deg, var(--primary), var(--secondary));
   color: white;
@@ -33,7 +32,6 @@ header h1 {
   letter-spacing: 1px;
 }
 
-/* MAIN CARD */
 main {
   max-width: 650px;
   margin: -40px auto 40px;
@@ -43,7 +41,6 @@ main {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-/* FORM GROUP */
 .form-group {
   margin-bottom: 18px;
 }
@@ -54,7 +51,6 @@ label {
   font-weight: 500;
 }
 
-/* INPUTS */
 input,
 select,
 textarea {
@@ -74,7 +70,6 @@ textarea:focus {
   box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.15);
 }
 
-/* FIELDSET */
 fieldset {
   border: 1px solid var(--border);
   border-radius: 8px;
@@ -86,19 +81,16 @@ legend {
   padding: 0 6px;
 }
 
-/* INLINE OPTIONS */
 fieldset label {
   display: inline-block;
   margin-right: 12px;
   margin-top: 6px;
 }
 
-/* REQUIRED STAR */
 .required {
   color: var(--accent);
 }
 
-/* BUTTON */
 input[type="submit"] {
   background: var(--primary);
   color: white;
@@ -115,7 +107,6 @@ input[type="submit"]:hover {
   transform: translateY(-1px);
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   font-size: 0.85rem;
@@ -123,7 +114,6 @@ footer {
   color: #555;
 }
 
-/* MOBILE OPTIMIZATION */
 @media (max-width: 600px) {
   main {
     margin: -30px 10px 20px;
