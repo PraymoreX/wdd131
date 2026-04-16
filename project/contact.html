@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>HealthBridge | Consultation</title>
+
+  <meta name="description" content="Submit your health concerns and receive simple wellness guidance from HealthBridge.">
+  <meta name="author" content="Praymore Omeni">
+
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Health Consultation</h1>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Consult</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="intro">
+    <h2>Tell Us About You</h2>
+    <p>Fill out the form below to receive basic wellness guidance.</p>
+  </section>
+
+  <form id="consultForm" action="review.html" method="get">
+
+    <div class="form-group">
+      <label for="name">Full Name *</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age *</label>
+      <input type="number" id="age" name="age" required min="1">
+    </div>
+
+    <div class="form-group">
+      <label for="condition">Main Concern *</label>
+      <select id="condition" name="condition" required>
+        <option value="" disabled selected>Select an issue</option>
+        <option value="headache">Headache</option>
+        <option value="fatigue">Fatigue</option>
+        <option value="fever">Fever</option>
+        <option value="nutrition">Nutrition</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="details">Describe Your Symptoms</label>
+      <textarea id="details" name="details" rows="4"></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit">Submit Consultation</button>
+    </div>
+
+  </form>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 HealthBridge | WDD 131</p>
+  <p><a href="references.html">References</a></p>
+</footer>
+
+<script src="scripts/contact.js"></script>
+
+</body>
+</html>
